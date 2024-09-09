@@ -40,7 +40,7 @@ public class HomeController : Controller
     public IActionResult EditPersonalDetails()
     {
         return View();
-    }
+    } 
 
     // Submit Claim (GET)
     public IActionResult SubmitClaim()
