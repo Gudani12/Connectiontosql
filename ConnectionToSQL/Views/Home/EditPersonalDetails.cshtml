@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Edit Personal Details";
+}
+
+<h2>Edit Personal Details</h2>
+
+<!-- Form to edit personal details -->
+<form method="post" action="/Home/EditPersonalDetails">
+    <!-- Add form fields for personal details -->
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="Name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="Email" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

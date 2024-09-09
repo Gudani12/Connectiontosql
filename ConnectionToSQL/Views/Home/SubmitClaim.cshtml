@@ -1,0 +1,54 @@
+﻿@{
+ 
+    ViewData["Title"] = "SubmitClaim";
+
+}
+
+<h2>Submit Your Claim</h2>
+
+<!-- Form to submit claim -->
+<form method="post" action="/Home/SubmitClaim">
+    <!-- Personal Details Section -->
+    <h3>Personal Details</h3>
+    <div class="form-group">
+        <label for="lecturerName">Lecturer Name:</label>
+        <input type="text" class="form-control" id="lecturerName" name="LecturerName" required>
+    </div>
+    <div class="form-group">
+        <label for="lecturerSurname">Lecturer Surname:</label>
+        <input type="text" class="form-control" id="lecturerSurname" name="LecturerSurname" required>
+    </div>
+    <div class="form-group">
+        <label for="employeeNo">Employee No:</label>
+        <input type="text" class="form-control" id="employeeNo" name="EmployeeNo" required>
+    </div>
+    <div class="form-group">
+        <label for="contactDetails">Contact Details:</label>
+        <input type="text" class="form-control" id="contactDetails" name="ContactDetails" required>
+    </div>
+
+    <!-- Claim Details Section -->
+    <h3>Claim Details</h3>
+    <div class="form-group">
+        <label for="module">Module:</label>
+        <input type="text" class="form-control" id="module" name="Module" required>
+    </div>
+    <div class="form-group">
+        <label for="programme">Programme:</label>
+        <input type="text" class="form-control" id="programme" name="Programme" required>
+    </div>
+    <div class="form-group">
+        <label for="hoursWorked">Number of Hours:</label>
+        <input type="number" class="form-control" id="hoursWorked" name="HoursWorked" required>
+    </div>
+    <div class="form-group">
+        <label for="hourlyRate">Hourly Rate:</label>
+        <input type="number" step="0.01" class="form-control" id="hourlyRate" name="HourlyRate" required>
+    </div>
+
+    <!-- Buttons -->
+    <button type="submit" class="btn btn-success">Submit Claim</button> 
+    <!-- Buttons -->
+    <button type="submit" class="btn btn-success">Add Module</button>
+
+</form>
